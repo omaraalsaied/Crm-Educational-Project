@@ -29,6 +29,6 @@ class SendProjectCreationEmail
     {
         $project = $event->getProject();
         $customer = $this->customerService->show($project->customer_id);
-        dd($project, $customer);
+        return $customer;
     }
 }
