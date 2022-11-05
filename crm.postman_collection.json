@@ -1,0 +1,480 @@
+{
+	"info": {
+		"_postman_id": "b649fd5f-98a0-410a-a2e9-c56511c57541",
+		"name": "crm",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14337688"
+	},
+	"item": [
+		{
+			"name": "customers",
+			"item": [
+				{
+					"name": "all customers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/customers",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create customer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/customers",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "customers by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/customers/{id}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"customers",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete customer by id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/customers/{id}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"customers",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update customer",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/customers/{id}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"customers",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "notes",
+			"item": [
+				{
+					"name": "get all notes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/notes",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"notes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get notes of customer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/notes/{customer_id}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"notes",
+								"{customer_id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create note",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/notes",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"notes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit a note",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/notes/{note_id}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"notes",
+								"{note_id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get note by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/notes/{note_id}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"notes",
+								"{note_id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete a note",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/notes/{note_id}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"notes",
+								"{note_id}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "invoices",
+			"item": [
+				{
+					"name": "get all invoices",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/invoices",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"invoices"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get invoices of customer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/invoices/{customer_id}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"invoices",
+								"{customer_id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create invoice",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/invoices",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"invoices"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit an invoice",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/invoices/{invoice_id}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"invoices",
+								"{invoice_id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get invoice by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/invoices/{invoice_id}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"invoices",
+								"{invoice_id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete a invoice",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/invoices/{invoice_id}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"invoices",
+								"{invoice_id}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Projects",
+			"item": [
+				{
+					"name": "get all projects",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/projects",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"projects"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get projects of customer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/projects/customer/{customer_id}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"projects",
+								"customer",
+								"{customer_id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create projects",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Gamma Project\",\r\n    \"cost\": \"244.5\",\r\n    \"customer_id\":20,\r\n    \"status\":0\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/customer/{customer_id}/projects",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"customer",
+								"{customer_id}",
+								"projects"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit a project",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/projects/{project_id}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"projects",
+								"{project_id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get project by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/projects/{project_id}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"projects",
+								"{project_id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete a project",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/projects/{project_id}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"projects",
+								"{project_id}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "create User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Hadeer Muhammed\",\r\n    \"email\":\"Hadeer@gmail.com\",\r\n    \"password\":\"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/users/create",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"users",
+								"create"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
