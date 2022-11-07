@@ -2,7 +2,7 @@
 
 namespace App\Crm\User\Service;
 
-use App\crm\Customer\Models\Customer;
+
 use App\Crm\User\Requests\CreateUser;
 use Crm\User\Events\UserCreation;
 use Crm\User\Models\User;
