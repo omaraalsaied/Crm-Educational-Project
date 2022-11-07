@@ -1,0 +1,10 @@
+<?php
+namespace Crm\Customer\Repos;
+Use Crm\Customer\Models\Customer;
+class CustomerRepo {
+private Customer $customer;
+
+    public function all(){
+
+    }
+}

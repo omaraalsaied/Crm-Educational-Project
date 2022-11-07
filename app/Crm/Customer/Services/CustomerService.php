@@ -12,7 +12,7 @@ use Symfony\Component\HttpFoundation\Response as ResponseAlias;
 class CustomerService
 {
     public function index (Request $request){
-        return Customer::all();
+        return Customer::SimplePaginate(1);
     }
 
 
