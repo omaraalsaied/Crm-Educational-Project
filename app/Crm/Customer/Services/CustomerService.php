@@ -1,9 +1,8 @@
 <?php
 
-namespace Crm\customer\services;
-
-use App\crm\customer\Models\Customer;
-use App\crm\customer\Requests\CreateCustomer;
+namespace Crm\Customer\Services;
+use App\Crm\customer\Models\Customer;
+use App\Crm\Customer\Repositories\CustomerRepository;
 use Crm\customer\Events\CustomerCreation;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -11,8 +10,12 @@ use Symfony\Component\HttpFoundation\Response as ResponseAlias;
 
 class CustomerService
 {
+    private CustomerRepository $customerRepository;
+    public function __construct(CustomerRepository $customerRepository){
+        $this->customerRepository = $customerRepository;
+    }
     public function index (Request $request){
-        return Customer::SimplePaginate(1);
+        return $this->customerRepository->all();
     }
 
 
@@ -50,4 +53,5 @@ class CustomerService
         return response()->json(['status'=>'Deleted'],Response::HTTP_OK);
 
     }
+
 }
